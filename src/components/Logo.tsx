@@ -1,11 +1,12 @@
+// src/components/Logo.tsx
+import React from 'react';
 
-import { Globe } from "lucide-react";
-
-export const Logo = () => {
-  return (
-    <div className="flex flex-col items-center justify-center">
-      <Globe className="h-48 w-48 text-black" />
-      <h1 className="mt-6 text-4xl font-bold tracking-wider text-black font-bauhaus">STATE DEPARTMENT</h1>
-    </div>
-  );
-};
+export const Logo = () => (
+  <div className="flex items-center justify-center py-8">
+    <img
+      src="/state-dept-logo.png"
+      alt="State Department"
+      className="h-48 w-auto object-contain"
+    />
+  </div>
+);
